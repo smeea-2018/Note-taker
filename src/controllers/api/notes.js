@@ -6,4 +6,7 @@ const deleteNotes = (req, res) => {
   res.json("delete");
 };
 
-module.exports = { getNotes, deleteNotes };
+const createNotes = (req, res) => {
+  res.json("created");
+};
+module.exports = { getNotes, deleteNotes, createNotes };

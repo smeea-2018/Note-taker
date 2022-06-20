@@ -3,7 +3,7 @@ const express = require("express");
 
 // import routes
 const apiRoutes = require("./routes/api");
-const viewRouter = require("./routes/views");
+const viewRouter = require("./routes/viewRoutes");
 
 const PORT = process.env.PORT || 4000;
 
