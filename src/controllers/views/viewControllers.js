@@ -1,5 +1,14 @@
+const path = require("path");
 const homePage = (req, res) => {
-  res.send("viewnote");
+  // const filePath = path.join(__dirname, "../");
+  res.sendFile(path.join(__dirname, "../../../public/index.html"));
+  console.log("homepage");
+};
+
+const notePage = (req, res) => {
+  console.log("notespage");
+  res.sendFile(path.join(__dirname, "../../../public/notes.html"));
+  // res.send("notepagee");
 };
 
 module.exports = {

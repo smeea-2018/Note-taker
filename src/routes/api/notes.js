@@ -5,7 +5,7 @@ const {
   getNotes,
   deleteNotes,
   createNotes,
-} = require("../controllers/api/notes");
+} = require("../../controllers/api/notes");
 // create router instance
 
 const router = Router();

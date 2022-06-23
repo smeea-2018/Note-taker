@@ -1,9 +1,8 @@
 // import express
 const express = require("express");
-
+const path = require("path");
 // import routes
-const apiRoutes = require("./routes/api");
-const viewRouter = require("./routes/viewRoutes");
+const routes = require("./routes");
 
 const PORT = process.env.PORT || 4000;
 
@@ -11,11 +10,13 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 
 // middleware
-// app.use(express.json());
-app.use("/api", apiRoutes);
-app.use("/", viewRouter);
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "../public")));
+app.use(routes);
 
 // bind and listen server on PORT
 app.listen(PORT, () => {
-  console.log("server is responding");
+  console.log("http://localhost:4000/");
 });
