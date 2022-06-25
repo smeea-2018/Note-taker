@@ -6,7 +6,6 @@ const homePage = (req, res) => {
 };
 
 const notePage = (req, res) => {
-  console.log("notespage");
   res.sendFile(path.join(__dirname, "../../../public/notes.html"));
   // res.send("notepagee");
 };
