@@ -55,7 +55,7 @@ MIT
 
 ## Mock-Up
 
-The following images show the web application's appearance and functionality:
+The following videos show the web application's appearance and functionality:
 
 <a href = "https://drive.google.com/file/d/10z8nvMyQ6lkkVuz712B1N6FeJUk6iQ8I/view">Watch Video </a>
 
